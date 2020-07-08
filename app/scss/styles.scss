@@ -82,7 +82,7 @@
 
   &__text {
     margin-bottom: 50px;
-    
+
     font-size: 20px;
   }
 
@@ -109,7 +109,7 @@
     &::placeholder {
       font-family: "Roboto", sans-serif;
       font-weight: 500;
-      
+
       color: #90a4ae;
     }
   }
@@ -124,5 +124,132 @@
 
     background: url(../images/icons/search.png) center center no-repeat;
     border: none;
+
   }
 }
+
+.products {
+  padding: 110px 0;
+
+  background-color: $grey;
+
+  &__inner-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__inner-btns {
+    margin-bottom: 60px;
+
+    text-align: center;
+  }
+
+  &__inner-filter {
+    margin-right: 5px;
+    padding: 12px 21px;
+
+    color: $bg;
+    background-color: #fff;
+    border: none;
+
+    cursor: pointer;
+
+    
+    &.mixitup-control-active {
+      background-color: $red;
+      color: #fff;
+    }
+  }
+
+  &__item {
+    max-width: 442px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    box-shadow: 0 1px 2px 0 rgba(205, 214, 222, .75);
+  }
+
+  &__item-img {
+    display: block;
+    min-height: 250px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    padding: 10px 30px;
+
+    font-weight: 500;
+  }
+
+  &__item-name {
+    display: block;
+    max-width: 310px;
+  }
+
+  &__item-title {
+    font-size: 18px;
+
+    color: $bg;
+  }
+
+  &__item-category {
+    display: block;
+
+    font-size: 14px;
+
+    color: $green;
+  }
+
+  &__item-price {
+    font-weight: 700;
+    font-size: 20px;
+
+    color: $bg;
+  }
+
+  &__item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 30px;
+  }
+
+  &__item-author {
+    display: flex;
+    align-items: center;
+
+    font-size: 14;
+    font-weight: 500;
+  }
+
+  &__item-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 14px;
+
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__inner-filter--bottom {
+    margin: 45px 5px;
+    padding: 15px 30px;
+
+    font-size: 16px;
+
+    box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
+  }
+}
+
